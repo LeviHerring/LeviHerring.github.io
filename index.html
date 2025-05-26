@@ -12,8 +12,18 @@
     <p>Welcome to my portfolio!</p>
   </header>
 
+  <!-- Tab Navigation -->
+  <nav class="page-tabs">
+    <button class="tab-button active" onclick="filterSection('all', event)">Show All</button>
+    <button class="tab-button" onclick="filterSection('about', event)">About</button>
+    <button class="tab-button" onclick="filterSection('skills', event)">Skills</button>
+    <button class="tab-button" onclick="filterSection('education', event)">Education</button>
+    <button class="tab-button" onclick="filterSection('projects', event)">Projects</button>
+    <button class="tab-button" onclick="filterSection('contact', event)">Contact</button>
+  </nav>
+
   <!-- About Me Section -->
-  <section id="about">
+  <section id="about" class="filter-section about">
     <h2>About Me</h2>
     <p>
       I'm <strong>Levi</strong>, a final-year Computer Games Technology student with a passion for designing and building immersive gaming experiences. 
@@ -23,167 +33,100 @@
   </section>
 
   <!-- Skills Section -->
-  <section id="skills">
-  <h2>Skills</h2>
+  <section id="skills" class="filter-section skills">
+    <h2>Skills</h2>
 
-  <h3>Technical Skills</h3>
-  <ul class="skill-grid">
-    <li><strong>Unity (C#):</strong> Advanced – Extensive game development with strong object-oriented design.</li>
-    <li><strong>Unreal Engine:</strong> Intermediate – Group projects using both Blueprints and C++.</li>
-    <li><strong>C#:</strong> Advanced – Primary scripting language for Unity projects.</li>
-    <li><strong>C++:</strong> Basic – Used in Unreal Engine and academic projects involving memory and API work.</li>
-    <li><strong>C:</strong> Intermediate – Experience with Wii devkitPro and cross-platform tool development.</li>
-  </ul>
+    <h3>Technical Skills</h3>
+    <ul class="skill-grid">
+      <li><strong>Unity (C#):</strong> Advanced – Extensive game development with strong object-oriented design.</li>
+      <li><strong>Unreal Engine:</strong> Intermediate – Group projects using both Blueprints and C++.</li>
+      <li><strong>C#:</strong> Advanced – Primary scripting language for Unity projects.</li>
+      <li><strong>C++:</strong> Basic – Used in Unreal Engine and academic projects involving memory and API work.</li>
+      <li><strong>C:</strong> Intermediate – Experience with Wii devkitPro and cross-platform tool development.</li>
+    </ul>
 
-  <h3>Soft Skills</h3>
-  <ul class="skill-grid soft-skill-grid">
-    <li><strong>Collaboration:</strong> Excellent team player; thrives in group projects and agile environments.</li>
-    <li><strong>Communication:</strong> Clear and responsive, especially in remote work setups.</li>
-    <li><strong>Problem-Solving:</strong> Proficient in debugging, systems thinking, and creative problem-solving.</li>
-  </ul>
-</section>
+    <h3>Soft Skills</h3>
+    <ul class="skill-grid soft-skill-grid">
+      <li><strong>Collaboration:</strong> Excellent team player; thrives in group projects and agile environments.</li>
+      <li><strong>Communication:</strong> Clear and responsive, especially in remote work setups.</li>
+      <li><strong>Problem-Solving:</strong> Proficient in debugging, systems thinking, and creative problem-solving.</li>
+    </ul>
+  </section>
 
-
-  <!-- Education & Academic Experience Section -->
-<section id="education">
-  <h2>Education & Academic Experience</h2>
-  <p>
-    During my time in university, I’ve participated in a wide range of technical modules and collaborative projects. These have enhanced my programming ability, game engine knowledge, and teamwork under industry-simulated conditions.
-  </p>
-  <ul>
-    <li>
-      <strong>Code Studio:</strong> Gained foundational experience in C++ including memory management, object-oriented design, and pointer manipulation.
-    </li>
-    <li>
-      <strong>Coding and Scripting for Games:</strong> Developed a full game using Unreal Engine Blueprints, learning core gameplay scripting and engine workflows.
-    </li>
-    <li>
-      <strong>Creating APIs:</strong> Built a racing game prototype in Unreal Engine C++ while learning to create and interact with game-specific APIs.
-    </li>
-    <li>
-      <strong>Programming for Consoles:</strong> Created a game demo for a modern console using official devkits, improving my adaptability and understanding of industry documentation standards.
-    </li>
-    <li>
-      <strong>Game AI:</strong> Implemented intelligent behaviors using techniques such as state machines, behavior trees, utility theory, and steering behavior.
-    </li>
-    <li>
-      <strong>Cross-Platform Tool Development:</strong> Developed a toolchain and asset importer for non-PC platforms, strengthening my language versatility and technical documentation practices.
-    </li>
-    <li>
-      <strong>Real Interactive Group Project:</strong> Worked in a simulated studio environment, enhancing my collaboration, communication, and agile development practices.
-    </li>
-  </ul>
-</section>
-
+  <!-- Education Section -->
+  <section id="education" class="filter-section education">
+    <h2>Education & Academic Experience</h2>
+    <p>
+      During my time in university, I’ve participated in a wide range of technical modules and collaborative projects. These have enhanced my programming ability, game engine knowledge, and teamwork under industry-simulated conditions.
+    </p>
+    <ul>
+      <li><strong>Code Studio:</strong> Gained foundational experience in C++ including memory management, object-oriented design, and pointer manipulation.</li>
+      <li><strong>Coding and Scripting for Games:</strong> Developed a full game using Unreal Engine Blueprints.</li>
+      <li><strong>Creating APIs:</strong> Built a racing game prototype in Unreal Engine C++.</li>
+      <li><strong>Programming for Consoles:</strong> Created a game demo using official devkits.</li>
+      <li><strong>Game AI:</strong> Implemented intelligent behaviors using state machines, behavior trees, utility theory, etc.</li>
+      <li><strong>Cross-Platform Tool Development:</strong> Developed a toolchain and asset importer for non-PC platforms.</li>
+      <li><strong>Real Interactive Group Project:</strong> Worked in a simulated studio environment.</li>
+    </ul>
+  </section>
 
   <!-- Projects Section -->
-  <section id="projects">
+  <section id="projects" class="filter-section projects">
     <h2>Projects</h2>
 
-    <!-- Project 1 -->
     <div class="project">
       <h3 onclick="toggleDescription(this)">Project One: Abyssante</h3>
       <div class="description" style="display: none;">
-        <iframe 
-          width="560" 
-          height="315" 
-          src="https://www.youtube.com/embed/vcx_bXy3f2s?si=YdSsa0apwn13yMwK" 
-          title="YouTube video player" 
-          frameborder="0" 
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-          referrerpolicy="strict-origin-when-cross-origin" 
-          allowfullscreen>
-        </iframe>
-        <p>
-          A university group project developed with Rebellion. My contributions included UI design and player input systems.
-        </p>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/vcx_bXy3f2s?si=YdSsa0apwn13yMwK" allowfullscreen></iframe>
+        <p>A university group project developed with Rebellion. My contributions included UI design and player input systems.</p>
       </div>
     </div>
 
-    <!-- Project 2 -->
     <div class="project">
       <h3 onclick="toggleDescription(this)">Project Two: Auto Chess Prototype</h3>
       <div class="description" style="display: none;">
-        <iframe 
-          width="560" 
-          height="315" 
-          src="https://www.youtube.com/embed/gPsOq9wkpLE?si=HCM8370JI30yHim5" 
-          title="YouTube video player" 
-          frameborder="0" 
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-          referrerpolicy="strict-origin-when-cross-origin" 
-          allowfullscreen>
-        </iframe>
-        <p>
-          Created a small auto chess demo using state machines, steering behaviors, and utility theory. Implemented two functional character classes.
-        </p>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/gPsOq9wkpLE?si=HCM8370JI30yHim5" allowfullscreen></iframe>
+        <p>Created a small auto chess demo using state machines, steering behaviors, and utility theory.</p>
       </div>
     </div>
 
-    <!-- Project 3 -->
     <div class="project">
       <h3 onclick="toggleDescription(this)">Project Three: Wii Asset Importer</h3>
       <div class="description" style="display: none;">
         <img src="images/BoxMax.png" alt="Wii Import - 3DS Max View" width="270" />
         <img src="images/BoxWii.png" alt="Wii Import - Wii Output" width="270" />
-        <p>
-          Used MaxScript and devkitPro to export custom models from 3DS Max to display as spinning objects on a Nintendo Wii.
-        </p>
+        <p>Used MaxScript and devkitPro to export custom models to display on a Nintendo Wii.</p>
       </div>
     </div>
 
-    <!-- Project 4 -->
     <div class="project">
-      <h3 onclick="toggleDescription(this)">Project Four: Don't Turn (2D Puzzle Platformer)</h3>
+      <h3 onclick="toggleDescription(this)">Project Four: Don't Turn</h3>
       <div class="description" style="display: none;">
-        <iframe 
-          width="560" 
-          height="315" 
-          src="https://www.youtube.com/embed/44lo1LGepfE?si=u2uCw_XsEsG4_fZw" 
-          title="YouTube video player" 
-          frameborder="0" 
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-          referrerpolicy="strict-origin-when-cross-origin" 
-          allowfullscreen>
-        </iframe>
-        <p>
-          Group project featuring abilities powered by a corruption mechanic. Contributed UI, some art assets, and helped design abilities (not all included in the final build).
-        </p>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/44lo1LGepfE?si=u2uCw_XsEsG4_fZw" allowfullscreen></iframe>
+        <p>Group project featuring abilities powered by a corruption mechanic. Contributed UI, some art, and ability design.</p>
       </div>
     </div>
 
-    <!-- Project 5 -->
     <div class="project">
       <h3 onclick="toggleDescription(this)">Project Five: 2D Stick Figure Fighting Game</h3>
       <div class="description" style="display: none;">
-        <iframe 
-          width="560" 
-          height="315" 
-          src="https://www.youtube.com/embed/jwCDbwtsTEc?si=9yXDOlA_1fINU23k" 
-          title="YouTube video player" 
-          frameborder="0" 
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-          referrerpolicy="strict-origin-when-cross-origin" 
-          allowfullscreen>
-        </iframe>
-        <p>
-          My first ever game project (2021). A 2D stick-fighting game with multiple playable characters and basic combat mechanics.
-        </p>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/jwCDbwtsTEc?si=9yXDOlA_1fINU23k" allowfullscreen></iframe>
+        <p>My first ever game project. A 2D fighting game with multiple characters and combat mechanics.</p>
       </div>
     </div>
-
   </section>
 
-  <section id="contact" class="contact">
-  <h2>Contact & Links</h2>
-  <ul>
-    <li><strong>Email:</strong> <a href="mailto:leviherring16@gmail.com">leviherring16@gmail.com</a></li>
-    <li><strong>GitHub:</strong> <a href="https://github.com/LeviHerring" target="_blank">github.com/LeviHerring</a></li>
-    <li><strong>Itch.io:</strong> <a href="https://levi-herring.itch.io" target="_blank">levi-herring.itch.io</a></li>
-    <li><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/levi-herring-56a180227/" target="_blank">linkedin.com/in/levi-herring</a></li>
-    <li><strong>Download CV:</strong> <a href="Levi Herring CV.pdf" download>Levi Herring CV (PDF)</a></li>
-  </ul>
-</section>
+  <!-- Contact Section -->
+  <section id="contact" class="filter-section contact">
+    <h2>Contact & Links</h2>
+    <ul>
+      <li><strong>Email:</strong> <a href="mailto:leviherring16@gmail.com">leviherring16@gmail.com</a></li>
+      <li><strong>GitHub:</strong> <a href="https://github.com/LeviHerring" target="_blank">github.com/LeviHerring</a></li>
+      <li><strong>Itch.io:</strong> <a href="https://levi-herring.itch.io" target="_blank">levi-herring.itch.io</a></li>
+      <li><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/levi-herring-56a180227/" target="_blank">linkedin.com/in/levi-herring</a></li>
+      <li><strong>Download CV:</strong> <a href="Levi Herring CV.pdf" download>Levi Herring CV (PDF)</a></li>
+    </ul>
+  </section>
 
   <script src="Script.js"></script>
 </body>
