@@ -1,8 +1,8 @@
 function toggleDescription(element) {
-  const description = element.nextElementSibling;
-  if (description.style.display === "none") {
-    description.style.display = "block";
+  const container = element.nextElementSibling;
+  if (container.style.display === "none") {
+    container.style.display = "block";
   } else {
-    description.style.display = "none";
+    container.style.display = "none";
   }
 }

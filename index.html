@@ -15,24 +15,25 @@
   <section id="projects">
     <h2>Projects</h2>
 
-    <div class="project">
-      <h3 onclick="toggleDescription(this)">Project One: Abyssante</h3>
+   <div class="project">
+  <h3 onclick="toggleDescription(this)">Project One: Abyssante</h3>
 
-      <!-- Embed YouTube video here -->
-      <iframe 
-        width="560" 
-        height="315" 
-        src="https://youtu.be/vcx_bXy3f2s" 
-        title="YouTube video player" 
-        frameborder="0" 
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-        allowfullscreen>
-      </iframe>
-
-      <p class="description" style="display: none;">
-        University group project worked with Rebellion. Click the title to show/hide this.
-      </p>
-    </div>
+  <!-- Wrap the video + description in a div -->
+  <div class="description" style="display: none;">
+    <iframe 
+      width="560" 
+      height="315" 
+      src="https://www.youtube.com/watch?v=vcx_bXy3f2s" 
+      title="YouTube video player" 
+      frameborder="0" 
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+      allowfullscreen>
+    </iframe>
+    <p>
+      University group project worked with Rebellion. Click the title to show/hide this.
+    </p>
+  </div>
+</div>
 
     <div class="project">
       <h3 onclick="toggleDescription(this)">Project Two: Auto Chess Project</h3>
