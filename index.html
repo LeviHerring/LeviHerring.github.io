@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>My Portfolio</title>
+  <title>Levi Herring – Portfolio</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
@@ -12,75 +12,131 @@
     <p>Welcome to my portfolio!</p>
   </header>
 
+  <!-- About Me Section -->
+  <section id="about">
+    <h2>About Me</h2>
+    <p>
+      I'm <strong>Levi</strong>, a final-year Computer Games Technology student with a passion for designing and building immersive gaming experiences. 
+      My core strengths lie in Unity development, where I’ve built a variety of games and systems using C#. I’ve also collaborated on larger-scale Unreal Engine projects and enjoy diving into tool development, UI design, and systems like health mechanics. 
+      I thrive in team environments, love solving technical challenges, and constantly seek ways to improve both my skills and my teammates'.
+    </p>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills">
+    <h2>Skills</h2>
+
+    <h3>Technical Skills</h3>
+    <div class="skill">
+      <label>Unity (C#)</label>
+      <progress value="8" max="10"></progress>
+      <p>Strong foundation through extensive Unity game development using C#.</p>
+    </div>
+
+    <div class="skill">
+      <label>Unreal Engine (C++)</label>
+      <progress value="6" max="10"></progress>
+      <p>Contributed to a full group project in Unreal, gaining hands-on experience with Blueprints and C++.</p>
+    </div>
+
+    <div class="skill">
+      <label>C#</label>
+      <progress value="7" max="10"></progress>
+      <p>Primary language for scripting in Unity projects, comfortable with object-oriented programming.</p>
+    </div>
+
+    <div class="skill">
+      <label>C++</label>
+      <progress value="5" max="10"></progress>
+      <p>Basic understanding from Unreal development and academic projects.</p>
+    </div>
+
+    <div class="skill">
+      <label>C</label>
+      <progress value="6" max="10"></progress>
+      <p>Used in tool creation for Nintendo Wii development with devkitPro.</p>
+    </div>
+
+    <h3>Soft Skills</h3>
+    <ul>
+      <li><strong>Collaboration:</strong> Excellent team player who enjoys helping others and growing together. (9/10)</li>
+      <li><strong>Communication:</strong> Responsive and clear communicator, especially in remote/online team setups. (9/10)</li>
+      <li><strong>Problem-Solving:</strong> Enjoy tackling technical challenges and thinking creatively to find solutions. (8/10)</li>
+    </ul>
+  </section>
+
+  <!-- Projects Section -->
   <section id="projects">
     <h2>Projects</h2>
 
     <!-- Project 1 -->
     <div class="project">
-      <h3 onclick="toggleDescription(this)">Project One: Abyssante (Group Project with Rebellion)</h3>
+      <h3 onclick="toggleDescription(this)">Project One: Abyssante</h3>
       <div class="description" style="display: none;">
         <iframe 
           width="560" 
           height="315" 
-          src="https://www.youtube.com/embed/vcx_bXy3f2s" 
+          src="https://www.youtube.com/embed/vcx_bXy3f2s?si=YdSsa0apwn13yMwK" 
           title="YouTube video player" 
           frameborder="0" 
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+          referrerpolicy="strict-origin-when-cross-origin" 
           allowfullscreen>
         </iframe>
-        <p>I worked on the UI and input system of a game created in collaboration with Rebellion as part of a university group project.</p>
+        <p>
+          A university group project developed with Rebellion. My contributions included UI design and player input systems.
+        </p>
       </div>
     </div>
 
     <!-- Project 2 -->
     <div class="project">
-      <h3 onclick="toggleDescription(this)">Project Two: Auto Chess AI Demo</h3>
+      <h3 onclick="toggleDescription(this)">Project Two: Auto Chess Prototype</h3>
       <div class="description" style="display: none;">
         <iframe 
           width="560" 
           height="315" 
-          src="https://www.youtube.com/embed/gPsOq9wkpLE" 
+          src="https://www.youtube.com/embed/gPsOq9wkpLE?si=HCM8370JI30yHim5" 
           title="YouTube video player" 
           frameborder="0" 
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+          referrerpolicy="strict-origin-when-cross-origin" 
           allowfullscreen>
         </iframe>
         <p>
-          I created a functional auto chess demo using:
-          <ul>
-            <li>State Machines</li>
-            <li>Steering Behaviours</li>
-            <li>Utility Theory</li>
-          </ul>
-          The demo includes two distinct character classes showcasing AI decision-making.
+          Created a small auto chess demo using state machines, steering behaviors, and utility theory. Implemented two functional character classes.
         </p>
       </div>
     </div>
 
-  <!-- Project 3 -->
-<div class="project">
-  <h3 onclick="toggleDescription(this)">Project Three: Wii Asset Importer</h3>
-  <div class="description" style="display: none;">
-    <img src="images/BoxMax.png" alt="3DS Max Export Screenshot" width="560" />
-    <img src="images/BoxWii.png" alt="Wii Render Screenshot" width="560" />
-    <p>
-      This tool uses <strong>MaxScript</strong> and <strong>devkitPro</strong> to export 3D models from 3DS Max and load them onto a Nintendo Wii as spinning objects.
-    </p>
-  </div>
-</div>
+    <!-- Project 3 -->
+    <div class="project">
+      <h3 onclick="toggleDescription(this)">Project Three: Wii Asset Importer</h3>
+      <div class="description" style="display: none;">
+        <img src="images/BoxMax.png" alt="Wii Import - 3DS Max View" width="270" />
+        <img src="images/BoxWii.png" alt="Wii Import - Wii Output" width="270" />
+        <p>
+          Used MaxScript and devkitPro to export custom models from 3DS Max to display as spinning objects on a Nintendo Wii.
+        </p>
+      </div>
+    </div>
+
     <!-- Project 4 -->
     <div class="project">
       <h3 onclick="toggleDescription(this)">Project Four: Don't Turn (2D Puzzle Platformer)</h3>
       <div class="description" style="display: none;">
-        <!-- <iframe src="..." width="560" height="315"></iframe> or <img src="images/dont_turn.png" alt="Don't Turn Game" width="560" /> -->
+        <iframe 
+          width="560" 
+          height="315" 
+          src="https://www.youtube.com/embed/44lo1LGepfE?si=u2uCw_XsEsG4_fZw" 
+          title="YouTube video player" 
+          frameborder="0" 
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+          referrerpolicy="strict-origin-when-cross-origin" 
+          allowfullscreen>
+        </iframe>
         <p>
-          A university group game where your abilities consume a corruption resource.
-          I contributed to:
-          <ul>
-            <li>User Interface (UI)</li>
-            <li>Art Assets</li>
-            <li>Ability Design (some were not implemented)</li>
-          </ul>
+          Group project featuring abilities powered by a corruption mechanic. Contributed UI, some art assets, and helped design abilities (not all included in the final build).
         </p>
       </div>
     </div>
@@ -89,9 +145,18 @@
     <div class="project">
       <h3 onclick="toggleDescription(this)">Project Five: 2D Stick Figure Fighting Game</h3>
       <div class="description" style="display: none;">
-        <!-- <img src="images/stick_fighter.png" alt="Stick Fighter Screenshot" width="560" /> -->
+        <iframe 
+          width="560" 
+          height="315" 
+          src="https://www.youtube.com/embed/jwCDbwtsTEc?si=9yXDOlA_1fINU23k" 
+          title="YouTube video player" 
+          frameborder="0" 
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+          referrerpolicy="strict-origin-when-cross-origin" 
+          allowfullscreen>
+        </iframe>
         <p>
-          My first ever project (2021). A 2D fighting game where you battle various stick figure characters. This project introduced me to core game development and character mechanics.
+          My first ever game project (2021). A 2D stick-fighting game with multiple playable characters and basic combat mechanics.
         </p>
       </div>
     </div>
