@@ -1,14 +1,76 @@
 body {
   font-family: Arial, sans-serif;
+  line-height: 1.6;
   margin: 0;
   padding: 0;
-  background: #f4f4f4;
+  background-color: #f4f4f4;
   color: #333;
 }
 
 header {
-  background: #333;
-  color: white;
-  padding: 1rem;
+  background-color: #333;
+  color: #fff;
+  padding: 2rem 0;
   text-align: center;
+}
+
+h1, h2, h3 {
+  margin: 0.5rem 0;
+}
+
+section {
+  padding: 2rem;
+}
+
+.project {
+  background: #fff;
+  margin: 1rem 0;
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.project h3 {
+  cursor: pointer;
+  color: #0077cc;
+}
+
+.project h3:hover {
+  text-decoration: underline;
+}
+
+.description {
+  margin-top: 1rem;
+}
+
+iframe {
+  max-width: 100%;
+  border-radius: 8px;
+}
+
+/* === Contact Section Styles === */
+.contact {
+  background-color: #fff;
+  padding: 2rem;
+  margin: 2rem 0;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.contact ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.contact li {
+  margin: 8px 0;
+}
+
+.contact a {
+  color: #0077cc;
+  text-decoration: none;
+}
+
+.contact a:hover {
+  text-decoration: underline;
 }
