@@ -8,18 +8,27 @@
 </head>
 <body>
   <header>
-    <h1>Hello, I'm [Your Name]</h1>
+    <h1>Hello, I'm Levi</h1>
     <p>Welcome to my portfolio!</p>
   </header>
-  <section>
+  <section id="projects">
     <h2>Projects</h2>
-    <ul>
-      <li>Project 1 – Description</li>
-      <li>Project 2 – Description</li>
-    </ul>
+
+    <div class="project">
+      <h3 onclick="toggleDescription(this)">Project One</h3>
+      <p class="description" style="display: none;">
+        University group project would with Rebellion. Click the title to show/hide this.
+      </p>
+    </div>
+
+    <div class="project">
+      <h3 onclick="toggleDescription(this)">Project Two</h3>
+      <p class="description" style="display: none;">
+        This is a description of Project Two.
+      </p>
+    </div>
   </section>
-  <footer>
-    <p>Contact: you@example.com</p>
-  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
